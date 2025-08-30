@@ -1,0 +1,66 @@
+High-Volume Entry Report (Threshold > 50 entries)
+========================================
+User: niakamalx
+Total Valid Entries: 272
+
+Sample of their entries:
+  - Time: 7h, Tags: @thegeals4126, @tyaariff_, @_ciktasya, Comment: "Let's follow and support"
+  - Time: 7h, Tags: @thegeals4126, @tyaariff_, @_ciktasya, Comment: "Let's follow and support"
+  - Time: 1w, Tags: @w.akmal__, @sha_shira, @sheraaa95, Comment: "[No Text]"
+  - Time: 1w, Tags: @izzatichoster, @samira5195, @anis_hasniza94, Comment: "Moga ada rezeki saya 😍"
+  - Time: 1w, Tags: @amalina.suhaimi_ii, @aidee1012, @ctatah, Comment: "Moga ada rezeki saya"
+  - Time: 1w, Tags: @marlissa_hanan, @aziemasira, @asma.yusoff, Comment: "Moga ada rezeki saya"
+  - Time: 1w, Tags: @honeyy_trent, @acet_77, @mrs_syafi_, Comment: "Moga ada rezeki saya"
+  - Time: 1w, Tags: @mokcik_ida, @its_lilly188, @honey.lemon2090, Comment: "Moga ada rezeki saya 😍"
+  - Time: 1w, Tags: @_mommyofadam, @mohamadhafiqabdulrashid, @sitimarimar05, Comment: "Moga ada rezeki saya"
+  - Time: 1w, Tags: @jin.kheng, @n0r_putri_auniiiii, @jueherman, Comment: "Moga ada rezeki saya"
+
+------------------------------
+User: qirah.aspah
+Total Valid Entries: 160
+
+Sample of their entries:
+  - Time: 3d, Tags: @norsabariahyahya, @samira5195, @sabarina_hasary, Comment: "[No Text]"
+  - Time: 3d, Tags: @pingyulovables, @queen.of_south, @sri.solehah, Comment: "[No Text]"
+  - Time: 1d, Tags: @leeya_zaleeya, @leilazamri, @lensa.zahra, Comment: "[No Text]"
+  - Time: 3d, Tags: @norsabariahyahya, @samira5195, @sabarina_hasary, Comment: "[No Text]"
+  - Time: 3d, Tags: @pingyulovables, @queen.of_south, @sri.solehah, Comment: "[No Text]"
+  - Time: 1d, Tags: @leeya_zaleeya, @leilazamri, @lensa.zahra, Comment: "[No Text]"
+  - Time: 2d, Tags: @miyaong0210, @misscc.ooo, @nizam.mohdnoor, Comment: "[No Text]"
+  - Time: 21h, Tags: @merpati_kelisa, @melodylai36, @meng.azree, Comment: "[No Text]"
+  - Time: 3d, Tags: @norsabariahyahya, @samira5195, @sabarina_hasary, Comment: "[No Text]"
+  - Time: 3d, Tags: @pingyulovables, @queen.of_south, @sri.solehah, Comment: "[No Text]"
+
+------------------------------
+User: kenoariqarman
+Total Valid Entries: 53
+
+Sample of their entries:
+  - Time: 1w, Tags: @sikiciee__, @thegeals4126, @kyza.hamzah, Comment: "[No Text]"
+  - Time: 5h, Tags: @fahmiishak, @thegeals4126, @asma.yusoff, Comment: "[No Text]"
+  - Time: 1w, Tags: @sikiciee__, @thegeals4126, @kyza.hamzah, Comment: "[No Text]"
+  - Time: 5h, Tags: @fahmiishak, @thegeals4126, @asma.yusoff, Comment: "[No Text]"
+  - Time: 1w, Tags: @thegeals4126, @nurulaincyrene, @arisyah2505, Comment: "[No Text]"
+  - Time: 1w, Tags: @sikiciee__, @thegeals4126, @kyza.hamzah, Comment: "[No Text]"
+  - Time: 5h, Tags: @fahmiishak, @thegeals4126, @asma.yusoff, Comment: "[No Text]"
+  - Time: 1w, Tags: @thegeals4126, @nurulaincyrene, @arisyah2505, Comment: "[No Text]"
+  - Time: 1w, Tags: @zazlina88, @nurulawhite, @ameliaishak, Comment: "[No Text]"
+  - Time: 1w, Tags: @sikiciee__, @thegeals4126, @kyza.hamzah, Comment: "[No Text]"
+
+------------------------------
+User: norhayati__dedek
+Total Valid Entries: 53
+
+Sample of their entries:
+  - Time: 1w, Tags: @aldawiyahalzaherah, @sya_kiera1, @nain5653, Comment: "[No Text]"
+  - Time: 1w, Tags: @jeminahhere, @petronellanella33, @pokchi35, Comment: "[No Text]"
+  - Time: 1w, Tags: @amirah1170, @agh_nurul_fazilah_talib, @fatem_nur_zakaria, Comment: "[No Text]"
+  - Time: 1w, Tags: @aldawiyahalzaherah, @sya_kiera1, @nain5653, Comment: "[No Text]"
+  - Time: 1w, Tags: @jeminahhere, @petronellanella33, @pokchi35, Comment: "[No Text]"
+  - Time: 1w, Tags: @amirah1170, @agh_nurul_fazilah_talib, @fatem_nur_zakaria, Comment: "[No Text]"
+  - Time: 4d, Tags: @sya_kiera1, @nain5653, @nursidah_sali, Comment: "[No Text]"
+  - Time: 4d, Tags: @nizambeta, @shimafemi, @pertama.hati.180, Comment: "[No Text]"
+  - Time: 1w, Tags: @aldawiyahalzaherah, @sya_kiera1, @nain5653, Comment: "[No Text]"
+  - Time: 1w, Tags: @jeminahhere, @petronellanella33, @pokchi35, Comment: "[No Text]"
+
+------------------------------
