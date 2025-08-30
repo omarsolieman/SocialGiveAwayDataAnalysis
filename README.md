@@ -65,16 +65,16 @@ A chart was generated to visualize the final *winning score* for each of the 10 
 
 | Username    | Total Valid Entries | Total Likes on Entries | Final Winning Score |
 |-------------|----------------------|-------------------------|----------------------|
-| Winner 1    | 162                 | 0                       | 162                 |
-| Winner 2    | 129                 | 0                       | 129                 |
-| Winner 3    | 75                  | 0                       | 75                  |
-| Winner 4    | 10                  | 0                       | 10                  |
-| Winner 5    | 10                  | 0                       | 10                  |
-| Winner 6    | 4                   | 0                       | 4                   |
-| Winner 7    | 3                   | 0                       | 3                   |
-| Winner 8    | 2                   | 0                       | 2                   |
-| Winner 9    | 2                   | 0                       | 2                   |
-| Winner 10   | 1                   | 0                       | 1                   |
+| Winner 1    | 160                 | 43                      | 203                 |
+| Winner 2    | 53                  | 23                      | 76                  |
+| Winner 3    | 9                   | 9                       | 18                  |
+| Winner 4    | 26                  | 24                      | 50                  |
+| Winner 5    | 1                   | 1                       | 2                   |
+| Winner 6    | 24                  | 24                      | 48                  |
+| Winner 7    | 1                   | 0                       | 1                   |
+| Winner 8    | 272                 | 18                      | 290                 |
+| Winner 9    | 14                  | 0                       | 14                   |
+| Winner 10   | 2                   | 0                       | 2                   |
 
 ---
 
