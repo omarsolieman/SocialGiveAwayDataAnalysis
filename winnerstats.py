@@ -121,6 +121,69 @@ def analyze_giveaway_results(cleaned_filepath, winner_usernames):
 
     print("="*50)
 
+    # --- 4.5 High-Volume Entry Analysis (WITH CENSORSHIP) ---
+    print("\n" + "="*50)
+    print("--- High-Volume Entry Analysis ---")
+    
+    HIGH_ENTRY_THRESHOLD = 50
+    user_entry_counts = valid_entries['username'].value_counts()
+    high_volume_users = user_entry_counts[user_entry_counts > HIGH_ENTRY_THRESHOLD]
+
+    report_content = []
+    
+    # Censorship mapping dictionaries
+    main_user_censor_map = {}
+    main_user_counter = 1
+    tagged_user_censor_map = {}
+    tagged_user_counter = 1
+
+    if not high_volume_users.empty:
+        print(f"Found {len(high_volume_users)} user(s) with more than {HIGH_ENTRY_THRESHOLD} valid entries.")
+        report_content.append(f"High-Volume Entry Report (Threshold > {HIGH_ENTRY_THRESHOLD} entries)\n")
+        report_content.append("="*40 + "\n")
+
+        for username, count in high_volume_users.items():
+            # Censor the main username
+            if username not in main_user_censor_map:
+                main_user_censor_map[username] = f"high_volume_user_{main_user_counter}"
+                main_user_counter += 1
+            censored_username = main_user_censor_map[username]
+
+            print(f"\nAnalyzing user: {censored_username} ({count} entries)")
+            report_content.append(f"User: {censored_username}\nTotal Valid Entries: {count}\n\n")
+            
+            user_specific_entries = valid_entries[valid_entries['username'] == username].head(10)
+            report_content.append("Sample of their entries (usernames are censored):\n")
+
+            for _, entry in user_specific_entries.iterrows():
+                # Censor tagged usernames
+                censored_tags_list = []
+                for i in range(1, 4):
+                    col_name = f'mentioned_user_{i}_username'
+                    tagged_user = entry[col_name]
+                    if pd.notna(tagged_user):
+                        if tagged_user not in tagged_user_censor_map:
+                            tagged_user_censor_map[tagged_user] = f"@tagged_user_{tagged_user_counter}"
+                            tagged_user_counter += 1
+                        censored_tags_list.append(tagged_user_censor_map[tagged_user])
+                
+                censored_tags = ", ".join(censored_tags_list)
+                time = entry['time_elapsed']
+                comment = entry['comment_text'] if pd.notna(entry['comment_text']) else "[No Text]"
+                report_line = f"  - Time: {time}, Tags: {censored_tags}, Comment: \"{comment}\"\n"
+                report_content.append(report_line)
+            report_content.append("\n" + "-"*30 + "\n")
+        
+        report_filename = 'high_entry_user_report.txt'
+        with open(report_filename, 'w', encoding='utf-8') as f:
+            f.writelines(report_content)
+        print(f"\nDetailed and CENSORED report for high-volume users saved to '{report_filename}'")
+
+    else:
+        print(f"No users found with more than {HIGH_ENTRY_THRESHOLD} valid entries.")
+    print("="*50)
+
+
     # --- 5. Generate and Save Visualizations ---
     if not PLOTTING_ENABLED:
         print("\n--- Visualizations ---")
@@ -132,17 +195,19 @@ def analyze_giveaway_results(cleaned_filepath, winner_usernames):
     print("\n--- Generating Visualizations ---")
     sns.set_style("whitegrid")
 
-    # Graph 1: Bar chart of winners' final scores
+    # Graph 1: Bar chart of winners' final scores (CENSORED)
     winner_scores = user_total_weights[valid_winners].sort_values(ascending=False)
+    censored_winner_labels = [f"Winner {i+1}" for i in range(len(winner_scores))]
+    
     plt.figure(figsize=(12, 7))
-    sns.barplot(x=winner_scores.index, y=winner_scores.values, palette="viridis")
+    sns.barplot(x=censored_winner_labels, y=winner_scores.values, palette="viridis")
     plt.ylabel("Final Winning Score (Entries + Likes)")
-    plt.xlabel("Winner Username")
+    plt.xlabel("Winner")
     plt.title("Engagement Score of Each Winner")
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
-    plt.savefig("winner_scores.png")
-    print("Saved winner scores graph to 'winner_scores.png'")
+    plt.savefig("winner_scores_censored.png")
+    print("Saved censored winner scores graph to 'winner_scores_censored.png'")
 
     # Graph 2: Comparison of Winners vs. Non-Winners
     if not valid_winners:
